@@ -1,0 +1,275 @@
+@font-face {
+  font-family: Rassul;
+  src: url('../img/good-times.rg-regular.otf');
+}
+
+:root {
+  font-family: 'Rassul';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.Title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Subtitle {
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.Text {
+  font-size: 1.25rem;
+  line-height: 1.7em;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.nav {
+  color: white;
+  font-size: 1.5rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  height: 8rem;
+  display: flow-root;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+}
+
+.navBar{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  font-size: 1.4rem;
+  margin-top: 25px;
+}
+
+span {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  line-height: 50px;
+}
+
+.heroTitle {
+  font-size: 3.75rem;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.subTitle {
+  font-size: 1.7rem;
+  margin-top: 1.3rem;
+  font-style: italic;
+}
+
+.mainText {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  line-height: 1.85em;
+  margin-bottom: 3rem;
+}
+
+.mainTitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.text1, .text2 {
+  margin-bottom: 2rem;
+}
+
+@keyframes logo-anim {
+  from {
+    box-shadow: 0px 0px;
+  } 
+  to {
+    box-shadow: 10px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  :root {
+    font-size: 12px;
+  }
+
+  .logo{
+    border: 1.75px solid black;
+    width: 88vw;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    border-radius: 200rem;
+    animation: logo-anim 0.5s ease  forwards;
+  }
+  
+  .navBar{
+    background-color: black;
+  }
+
+  .nav{
+    margin-bottom: 5rem;
+  }
+
+  .subTitle {
+    margin-bottom: 10rem;
+  }
+
+  .heroTitle {
+    margin-top: 11rem;
+  }
+
+  .Home{
+    padding-bottom: 2.5rem;
+  }
+}
+
+.padd{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.Services {
+  color: white;
+  background-color: black;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  
+  body {
+    margin: 0;
+    background-color: #292929;
+    height: auto;
+    background-image: url('https://venetianplaster.com.au/wp-content/uploads/2019/05/Dulux-Acratex-Venetian-Plaster-06-Cafe-Feature-Wall-Black.jpg');
+    margin-left: auto;
+  }
+
+  .navBar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  
+  .Text {
+    word-spacing: 0.3em;
+    font-size: 1.5rem;
+  }
+  
+  .nav {
+    position: relative;
+  }
+  
+  .nav:before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+  
+  a {
+    text-decoration: none; 
+    color: white;
+    text-align: center;
+    vertical-align: middle; 
+  }
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .heroLogo {
+    filter: hue-rotate(-2deg);
+    width: 50%;
+  }
+  
+  .Home{
+    max-width: 1350px;
+    min-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    /* background-color: #333334; */
+    color: white;
+    display: flow-root;
+    border-radius: 1em;
+  }
+
+  .heroTitle {
+    font-size: 5rem;
+    margin-right: auto;
+    margin-top: 6.5rem;
+    margin-left: auto;
+    max-width: 1200px;
+    min-width: 1000px;
+    text-align: center;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .mainText {
+    font-size: 1.25rem;
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    line-height: 1.85em;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  .mainTitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+}
